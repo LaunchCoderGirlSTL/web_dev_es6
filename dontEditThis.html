@@ -1,0 +1,66 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<style>
+.btn{
+	margin:20px 0;
+}
+</style>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/javascript" src="es6Classes.js"></script>
+<script type="text/javascript" src="es6Arrows.js"></script>
+<script type="text/javascript" src="es6Vars.js"></script>
+</head>
+<body>
+<div class="container">
+<h1 class="panel-heading">ES6 Homework 2018</h1>
+<div class="panel-group">
+	<div class="panel panel-primary" id="es6Class">
+		<div class="panel-heading">ES6 Classes</div>
+		<div class="panel-body">
+			<span id="es6ClassesSpan"> Edit ES6Classes</span>
+		</div>
+	</div>
+	<div class="panel panel-primary" id="es6Vars">
+		<div class="panel-heading">ES6 Let/Const</div>
+		<div class="panel-body">
+			<span id="es6VarsSpan"> Edit ES6Vars</span>
+		</div>
+	</div>
+	<div class="panel panel-primary" id="es6Arrows">
+		<div class="panel-heading">ES6 Arrows</div>
+		<div class="panel-body">
+			<span id="es6ArrowsSpan"> Edit ES6Arrows </span>
+		</div>
+	</div>
+</div>
+<button class="btn btn-primary pull-right" onclick="location.reload()">Run <span class="glyphicon glyphicon-play" /></button>
+</div>
+</body>
+<footer>
+<script>
+try{
+	document.getElementById("es6ClassesSpan").innerHTML = "Good job, you've made" + " " + characterOne.name + " " + "who is " + characterOne.age + " years old and has the stats of:<br> " + characterOne.addStats(Math.floor((Math.random() * 20) + 1), Math.floor((Math.random() * 20) + 1), Math.floor((Math.random() * 20) + 1), Math.floor((Math.random() * 20) + 1), Math.floor((Math.random() * 20) + 1));
+	document.getElementById("es6Class").classList.replace("panel-primary", "panel-success");
+}
+catch(e){
+	console.log("Error is: " + e.name + ":" + e.message);
+}
+try{
+	document.getElementById("es6ArrowsSpan").innerHTML = sendCharacterOff();
+	document.getElementById("es6Arrows").classList.replace("panel-primary", "panel-success");
+}
+catch(e){
+	console.log("Error is: " + e.name + ":" + e.message);
+	}
+try{
+	document.getElementById("es6VarsSpan").innerHTML = letsGiveSupplies();
+	document.getElementById("es6Vars").classList.replace("panel-primary", "panel-success");
+}
+catch(e){
+	console.log("Error is: " + e.name + ":" + e.message);
+}
+
+</script>
+</footer>
+</html>
