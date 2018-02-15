@@ -1,0 +1,2 @@
+https://babeljs.io/repl/
+https://medium.com/javascript-scene/how-to-learn-es6-47d9a1ac2620
